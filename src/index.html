@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/tailwind.css" rel="stylesheet" />
+    <link href="./dist/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>BitNautic</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="border-gray-200 py-2.5 rounded dark:bg-gray-800 sh-head container-1"
+      >
+        <div
+          class="container flex flex-wrap justify-between items-center mx-auto"
+        >
+          <a href="https://flowbite.com" class="flex items-center">
+            <img
+              src="./assets/img/logo.png"
+              class="mr-3 h-6 sm:h-9"
+              alt="Flowbite Logo"
+            />
+          </a>
+          <div class="flex md:order-2 ">
+            <button
+              type="button"
+              class="text-white hidden md:inline-block bg-transparent focus:ring-4 focus:outline-none focus:ring-blue-300 font-normal rounded-lg text-base px-5 py-2.5 text-center md:mr-3 border border-white"
+            >
+              Login
+            </button>
+            <button
+              type="button"
+              class="text-lightblue2 hidden md:inline-block text-base font-semibold bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg px-5 py-2.5 text-center mr-3 md:mr-0"
+            >
+              Sign Up
+            </button>
+            <button
+              data-collapse-toggle="mobile-menu-4"
+              type="button"
+              class="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="mobile-menu-4"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <svg
+                class="hidden w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
+            id="mobile-menu-4"
+          >
+            <ul
+              class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block md:hidden py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Login</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block  md:hidden py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Signup</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="container-1 md:flex md:justify-between">
+        <div class="pt-16 wow animate__animated  animate__slideInLeft">
+          <h1 class=" font-bold text-[28px]  leading-[47px] md:text-[50px] md:leading-[70px] text-grey1 tracking-[0.12px]">
+            A <span class="text-primary">Reliable </span>Shipping Company for all scale of business
+          </h1>
+          <p
+            class="text-base max-w-[515px] font-normal text-grey2 leading-[32px]"
+          >
+            Lorem ipsum is common placeholder text used to demonstrate the
+            graphic elements of a document or visual presentation.
+          </p>
+
+          <input
+            type="email"
+            id="email"
+            class="bg-gray-50 border max-w-[499px] h-[58px] my-3 w-full border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="name@flowbite.com"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            class="bg-gray-50 border max-w-[499px] h-[58px] my-3 w-full border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="name@flowbite.com"
+            required
+          />
+          <button class="cta-btn w-full max-w-[499px] h-[58px]">
+            Request Pickup <i class="fa-solid fa-circle-chevron-right"></i>
+          </button>
+        </div>
+        <div class="wow animate__animated  animate__slideInRight">
+          <img src="./assets/img/hero_img.png" alt="image of a globe" />
+        </div>
+      </section>
+    </header>
+    <section class="container-1 mt-[129px]">
+      <img src="./assets/img/logo.png" class="mx-auto" alt="" />
+      <p
+        class="max-w-[852px]  sm:text-sm md:text-base mx-auto text-center wow animate__animated animate__fadeInDown text-grey2 my-[25px]"
+      >
+        Aiming to serve humanity by providing effective solutions, we came up
+        with an idea which transforms one of the biggest industries in the world
+        - Shipping.
+      </p>
+
+
+      <div id="default-carousel" class="relative" data-carousel="static">
+        <!-- Carousel wrapper -->
+<div class="overflow-hidden relative p-10 items-start rounded-lg min-h-[700px] md:min-h-[400px]">
+             <!-- Item 1 -->
+      <div
+      data-carousel-item
+      id="carousel-item-1"
+        class="w-11/12 md:w-auto  hidden duration-700 ease-in-out feature-box items-center justify-center max-w-[737px] p-4 lg:p-0   sh-2 lg:shadow-none lg:rounded-0 rounded-[14px] bg-white lg:bg-none  lg:flex mx-auto lg:max-w-[1130px] min-h-[360px]"
+      >
+        <div class="h-[250px] feature-image mx-auto w-full lg:max-w-[503px] lg:-mr-[150px] z-20">
+          <img class="h-[100%] w-full block" src="./assets/img/pic_1.png" alt="car" />
+        </div>
+        <div
+          class="min-h-[300px] text-center md:text-left max-w-[737px] lg:sh-2 lg:rounded-[14px] px-4 py-6 lg:pl-[200px] relative"
+        >
+          <h2 class="text-2xl">About Bitnautic Cargo Delivery</h2>
+          <p class="text-sm leading-[28px] text-grey2 my-4">
+            Binautic cargo delivery service is an innovative, logistic solution
+            for delivery of small and large cargo for all kinds of business. Our
+            Platform comes up with distinctive features like AI based booking
+            system, realtime tracking of cargo and ships
+          </p>
+          <button class="cta-btn text-xs mx-auto md:mx-0 max-w-[245px] w-full block">
+            Read more <i class="fa-solid fa-circle-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+ <!-- Item 2 -->
+ <div
+ data-carousel-item
+ id="carousel-item-2"
+   class="hidden w-11/12 mg:w-auto duration-700 ease-in-out feature-box items-center justify-center max-w-[737px] p-4 lg:p-0   sh-2 lg:shadow-none lg:rounded-0 rounded-[14px] bg-white lg:bg-none  lg:flex mx-auto lg:max-w-[1130px] min-h-[360px]"
+ >
+   <div class="h-[250px] feature-image mx-auto w-full lg:max-w-[503px] lg:-mr-[150px] z-20">
+     <img class="h-[100%] w-full block" src="./assets/img/pic_1.png" alt="car" />
+   </div>
+   <div
+     class="min-h-[300px] text-center md:text-left max-w-[737px] lg:sh-2 lg:rounded-[14px] px-4 py-6 lg:pl-[200px] relative"
+   >
+     <h2 class="text-2xl">About Bitnautic Cargo Delivery</h2>
+     <p class="text-sm leading-[28px] text-grey2 my-4">
+       Binautic cargo delivery service is an innovative, logistic solution
+       for delivery of small and large cargo for all kinds of business. Our
+       Platform comes up with distinctive features like AI based booking
+       system, realtime tracking of cargo and ships
+     </p>
+     <button class="cta-btn text-xs mx-auto md:mx-0 max-w-[245px] w-full block">
+       Read more
+     </button>
+   </div>
+ </div>
+  <!-- Item 3 -->
+  <div
+  data-carousel-item
+  id="carousel-item-3"
+    class=" w-11/12 md:w-auto hidden duration-700 ease-in-out feature-box items-center justify-center max-w-[737px] p-4 lg:p-0   sh-2 lg:shadow-none lg:rounded-0 rounded-[14px] bg-white lg:bg-none  lg:flex mx-auto lg:max-w-[1130px] min-h-[360px]"
+  >
+    <div class="h-[250px] feature-image mx-auto w-full lg:max-w-[503px] lg:-mr-[150px] z-20">
+      <img class="h-[100%] w-full block" src="./assets/img/pic_1.png" alt="car" />
+    </div>
+    <div
+      class="min-h-[300px] text-center md:text-left max-w-[737px] lg:sh-2 lg:rounded-[14px] px-4 py-6 lg:pl-[200px] relative"
+    >
+      <h2 class="text-2xl">About Bitnautic Cargo Delivery</h2>
+      <p class="text-sm leading-[28px] text-grey2 my-4">
+        Binautic cargo delivery service is an innovative, logistic solution
+        for delivery of small and large cargo for all kinds of business. Our
+        Platform comes up with distinctive features like AI based booking
+        system, realtime tracking of cargo and ships
+      </p>
+      <button class="cta-btn text-xs mx-auto md:mx-0 max-w-[245px] w-full block">
+        Read more
+      </button>
+    </div>
+  </div>
+
+      
+      </div>
+      <div class="flex bg-primary p-2 rounded absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+        <button type="button" class="w-3 h-3  rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+    </div>
+      </div>
+
+
+    </section>
+    <section class="container-1 py-28 min-h-screen">
+      <h6
+        class="uppercase text-center text-base font-semibold text-golden tracking-[1px]"
+      >
+        Our Services
+      </h6>
+      <h2 class="text-center">Moving Product across all borders</h2>
+      <p class="text-grey2 max-w-[768px] text-base text-center mx-auto my-4">
+        BitNautic is a platform providing you a smooth, efficient, and
+        transparent shipping experience. It is a one-stop shop leveraging all
+        the stakeholders with its top-notch features.
+      </p>
+
+      <div class="flex justify-center md:justify-between flex-wrap">
+        <div class="w-full sm:max-w-[301px] card p-5 m-3 wow animate__bounceIn animate__animated ">
+          <div class="icon-box icon-truck">
+            <img src="./assets/img/icons/delivery-truck 1.png" />
+          </div>
+          <h4 class="font-bold my-4 text-lg">Shipping & Logistics</h4>
+          <p class="text-sm my-3 text-lightgrey">
+            We're at the forefront of developing innovative supply chain
+            solutions, combining our worldwide network...
+          </p>
+          <a class="font-medium text-linkblue text-sm font-pop">Read more</a>
+        </div>
+        <div class="w-full sm:max-w-[301px] card p-5 m-3 wow animate__bounceIn animate__animated">
+          <div class="icon-box icon-analytics">
+            <img src="./assets/img/icons/analytics.png" />
+          </div>
+          <h4 class="font-bold my-4 text-lg">Shipping & Logistics</h4>
+          <p class="text-sm my-3 text-lightgrey">
+            We're at the forefront of developing innovative supply chain
+            solutions, combining our worldwide network...
+          </p>
+          <a class="font-medium text-linkblue text-sm font-pop">Read more</a>
+        </div>
+        <div class="w-full sm:max-w-[301px] card p-5 m-3 wow animate__bounceIn animate__animated">
+          <div class="icon-box icon-pie">
+            <img src="./assets/img/icons/pie-chart.png" />
+          </div>
+          <h4 class="font-bold my-4 text-lg">Shipping & Logistics</h4>
+          <p class="text-sm my-3 text-lightgrey">
+            We're at the forefront of developing innovative supply chain
+            solutions, combining our worldwide network...
+          </p>
+          <a class="font-medium text-linkblue text-sm font-pop">Read more</a>
+        </div>
+      </div>
+    </section>
+    <section class="container-1">
+      <div class="flex flex-col-reverse md:flex-row justify-between">
+        <div class="wow animate__animated  animate__slideInLeft w-full md:w-2/4">
+          <img src="./assets/img/cargo_img.png" />
+        </div>
+        <div class="wow animate__animated  animate__slideInRight w-full md:w-2/4">
+          <h2 class="text-center md:text-left">Supercharge your supply chain</h2>
+          <div>
+            <p
+              class="text-sm my-9 pl-5 leading-6 text-grey4 border-l-4 border-lightblue3"
+            >
+              Vestibulum blandit ut nunc velend bibendum semper elit eget
+              dignissim rhoncus, nisl augue lacinia urna vel rutrum nisi nunc
+              sit amet risus nulla egestas. Vestibulum blandit ut nunc velend
+              bibendum semper elit eget
+            </p>
+            <p class="flex my-2">
+              <img src="./assets/img/icons/check.svg" class="mr-4" />
+              <span class="text-sm pl-5 leading-6 text-grey4"
+                >Blandit ut nunc vel bibendum semper elit</span
+              >
+            </p>
+            <p class="flex my-7">
+              <img src="./assets/img/icons/check.svg" class="mr-4" />
+              <span class="text-sm pl-5 leading-6 text-grey4"
+                >Blandit ut nunc vel bibendum semper elit</span
+              >
+            </p>
+            <button class="cta-btn my-4 text-sm w-[169px]">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-1 flex items-center min-h-[180px] bg-lightblue4">
+      <div class="flex justify-center flex-wrap md:justify-between w-full ">
+        <div class="m-3 wow animate__flip animate__animated">
+          <h2 class="text-white text-center text-[32px] leading-[39px] md:text-[54px] md:leading-[66px]">80+</h2>
+          <p class="text-white text-center text-sm leading-[19px] md:text-lg md:leading-6">Wharehouses</p>
+        </div>
+        <div class="m-3 wow animate__flip animate__animated">
+          <h2 class="text-white text-center text-[32px] leading-[39px] md:text-[54px] md:leading-[66px]">30+</h2>
+          <p class="text-white text-center text-sm leading-[19px] md:text-lg md:leading-6">Happy Clients</p>
+        </div>
+        <div class="m-3 wow animate__flip animate__animated">
+          <h2 class="text-white text-center text-[32px] leading-[39px] md:text-[54px] md:leading-[66px]">
+            230+
+          </h2>
+          <p class="text-white text-center text-sm leading-[19px] md:text-lg md:leading-6">Shipped Goods</p>
+        </div>
+        <div class="m-3 wow animate__flip animate__animated">
+          <h2 class="text-white text-center text-[32px] leading-[39px] md:text-[54px] md:leading-[66px]">
+            $2.5M
+          </h2>
+          <p class="text-white text-center text-sm leading-[19px] md:text-lg md:leading-6">
+            Total Worth of Goods
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="container-1 min-h-screen py-28">
+      <h2 class="text-center">Frequently Asked Questions (FAQ)</h2>
+      <p class="text-grey2 max-w-[488px] text-base text-center mx-auto my-4">
+        BROWSE OUR FAQ'S BELOW, IF YOU CAN NOT FIND THE ANSWER TO YOU'RE LOOKING
+        FOR PLEASE CONTACT US.
+      </p>
+
+      <div id="accordion-collapse" data-accordion="collapse">
+        <h4 id="accordion-collapse-heading-1">
+          <button
+            type="button"
+            class="flex my-4 justify-between items-center p-5 w-full font-medium text-left text-gray-500 rounded-xl border  border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 bg-transparent"
+            data-accordion-target="#accordion-collapse-body-1"
+            aria-expanded="true"
+            aria-controls="accordion-collapse-body-1"
+          >
+            <span>How much does it cost to ship a product to another country?</span>
+            <svg
+              data-accordion-icon
+              class="w-6 h-6 rotate-180 shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </h2>
+        <div
+          id="accordion-collapse-body-1"
+          class="hidden"
+          aria-labelledby="accordion-collapse-heading-1"
+        >
+          <div
+            class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
+          >
+            <p class="mb-2 text-gray-500 dark:text-gray-400">
+              Flowbite is an open-source library of interactive components built
+              on top of Tailwind CSS including buttons, dropdowns, modals,
+              navbars, and more.
+            </p>
+            <p class="text-gray-500 dark:text-gray-400">
+              Check out this guide to learn how to
+              <a
+                href="https://flowbite.com/docs/getting-started/introduction/"
+                class="text-blue-600 dark:text-blue-500 hover:underline"
+                >get started</a
+              >
+              and start developing websites even faster with components on top
+              of Tailwind CSS.
+            </p>
+          </div>
+        </div>
+
+
+        <h4 id="accordion-collapse-heading-2">
+            <button
+            type="button"
+            class="flex my-4 justify-between items-center p-5 w-full font-medium text-left text-gray-500 rounded-xl border  border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 bg-transparent"
+            data-accordion-target="#accordion-collapse-body-2"
+            aria-expanded="true"
+            aria-controls="accordion-collapse-body-2"
+          >
+            <span>Can i ship product to anywhere in the world?</span>
+            <svg
+              data-accordion-icon
+              class="w-6 h-6 rotate-180 shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </h4>
+        <div
+          id="accordion-collapse-body-2"
+          class="hidden"
+          aria-labelledby="accordion-collapse-heading-2"
+        >
+          <div
+            class="p-5 border border-b-0 border-gray-200 dark:border-gray-700"
+          >
+            <p class="mb-2 text-gray-500 dark:text-gray-400">
+              Flowbite is first conceptualized and designed using the Figma
+              software so everything you see in the library has a design
+              equivalent in our Figma file.
+            </p>
+            <p class="text-gray-500 dark:text-gray-400">
+              Check out the
+              <a
+                href="https://flowbite.com/figma/"
+                class="text-blue-600 dark:text-blue-500 hover:underline"
+                >Figma design system</a
+              >
+              based on the utility classes from Tailwind CSS and components from
+              Flowbite.
+            </p>
+          </div>
+        </div>
+
+
+        <h4 id="accordion-collapse-heading-3">
+            <button
+            type="button"
+            class="flex my-4 justify-between items-center p-5 w-full font-medium text-left text-gray-500 rounded-xl border  border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 bg-transparent"
+            data-accordion-target="#accordion-collapse-body-3"
+            aria-expanded="true"
+            aria-controls="accordion-collapse-body-3"
+          >
+            <span>Do you offer all kind of logistics service?</span>
+            <svg
+              data-accordion-icon
+              class="w-6 h-6 rotate-180 shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </h4>
+        <div
+          id="accordion-collapse-body-3"
+          class="hidden"
+          aria-labelledby="accordion-collapse-heading-3"
+        >
+          <div
+            class="p-5 border border-b-0 border-gray-200 dark:border-gray-700"
+          >
+            <p class="mb-2 text-gray-500 dark:text-gray-400">
+              Flowbite is first conceptualized and designed using the Figma
+              software so everything you see in the library has a design
+              equivalent in our Figma file.
+            </p>
+            <p class="text-gray-500 dark:text-gray-400">
+              Check out the
+              <a
+                href="https://flowbite.com/figma/"
+                class="text-blue-600 dark:text-blue-500 hover:underline"
+                >Figma design system</a
+              >
+              based on the utility classes from Tailwind CSS and components from
+              Flowbite.
+            </p>
+          </div>
+        </div>
+
+        
+        <h4 id="accordion-collapse-heading-4">
+            <button
+            type="button"
+            class="flex my-4 justify-between items-center p-5 w-full font-medium text-left text-gray-500 rounded-xl border  border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 bg-transparent"
+            data-accordion-target="#accordion-collapse-body-4"
+            aria-expanded="true"
+            aria-controls="accordion-collapse-body-4"
+          >
+            <span>24/7 custemer services?</span>
+            <svg
+              data-accordion-icon
+              class="w-6 h-6 rotate-180 shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </h4>
+        <div
+          id="accordion-collapse-body-4"
+          class="hidden"
+          aria-labelledby="accordion-collapse-heading-4"
+        >
+          <div
+            class="p-5 border border-b-0 border-gray-200 dark:border-gray-700"
+          >
+            <p class="mb-2 text-gray-500 dark:text-gray-400">
+              Flowbite is first conceptualized and designed using the Figma
+              software so everything you see in the library has a design
+              equivalent in our Figma file.
+            </p>
+            <p class="text-gray-500 dark:text-gray-400">
+              Check out the
+              <a
+                href="https://flowbite.com/figma/"
+                class="text-blue-600 dark:text-blue-500 hover:underline"
+                >Figma design system</a
+              >
+              based on the utility classes from Tailwind CSS and components from
+              Flowbite.
+            </p>
+          </div>
+        </div>
+
+
+        <h4 id="accordion-collapse-heading-5">
+            <button
+            type="button"
+            class="flex my-4 justify-between items-center p-5 w-full font-medium text-left text-gray-500 rounded-xl border  border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 bg-transparent"
+            data-accordion-target="#accordion-collapse-body-5"
+            aria-expanded="true"
+            aria-controls="accordion-collapse-body-5"
+          >
+            <span>How does my client recieve their goods when shipped</span>
+            <svg
+              data-accordion-icon
+              class="w-6 h-6 rotate-180 shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </h4>
+        <div
+          id="accordion-collapse-body-5"
+          class="hidden"
+          aria-labelledby="accordion-collapse-heading-5"
+        >
+          <div
+            class="p-5 border border-b-0 border-gray-200 dark:border-gray-700"
+          >
+            <p class="mb-2 text-gray-500 dark:text-gray-400">
+              Flowbite is first conceptualized and designed using the Figma
+              software so everything you see in the library has a design
+              equivalent in our Figma file.
+            </p>
+            <p class="text-gray-500 dark:text-gray-400">
+              Check out the
+              <a
+                href="https://flowbite.com/figma/"
+                class="text-blue-600 dark:text-blue-500 hover:underline"
+                >Figma design system</a
+              >
+              based on the utility classes from Tailwind CSS and components from
+              Flowbite.
+            </p>
+          </div>
+        </div>
+
+
+
+        
+      </div>
+    </section>
+    <section class="container-1 bg-bglime py-16 min-h-screen flex flex-col justify-center">
+            <h2 class="text-center">Reviews from Clients</h2>
+            <div class="md:flex justify-between">
+                <div class="md:w-2/4 mx-auto md:mx-0 my-8 max-w-[540px]">
+                       <div class="w-full  rounded-xl sh-3 bg-white p-6">
+                            <h4 class="text-center font-bold text-base leading-6 text-lightblue4 ">“Incredible Experience”</h4>
+                            <p class="text-sm leading-6 text my-3 opacity-70 text-grey5 text-center">We had an incredible experience working with Mixland and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly.</p>
+                       </div>
+ 
+                       <div class="flex justify-center my-5">
+<div class="flex items-center space-x-4 ">
+    <img class="w-10 h-10 rounded-full" src="./assets/img/user1.png" alt="">
+    <div class="space-y-1 font-semibold text-base leading-4 dark:text-white">
+    <div>Wade Warren</div>
+    <div class="text-sm text-grey5 leading-4 opacity-50">Joined in August 2014</div>
+    </div>
+    </div>
+</div>
+    
+</div>
+                <div class="md:w-2/4 mx-auto md:mx-0 my-8 max-w-[540px]">
+                    <div class="w-full  rounded-xl sh-3 bg-white p-6">
+                         <h4 class="text-center font-bold text-base leading-6 text-lightblue4 ">“Incredible Experience”</h4>
+                         <p class="text-sm leading-6 text my-3 opacity-70 text-grey5 text-center">We had an incredible experience working with Mixland and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly.</p>
+                    </div>
+                    <div class="flex justify-center my-5">                 
+<div class="flex items-center space-x-4 ">
+    <img class="w-10 h-10 rounded-full" src="./assets/img/user2.png" alt="">
+    <div class="space-y-1 font-semibold text-base leading-4 dark:text-white">
+    <div>Esther Howard</div> 
+    <div class="text-sm text-grey5 leading-4 opacity-50">CEO, ABC Corporation</div>
+    </div>
+</div>
+</div>
+    
+             </div>
+
+            </div>
+    </section>
+    <section class="container-1 min-h-[486px] bg-cover bg-center cta_bg flex flex-col justify-center">
+        <div class="max-w-[500px] wow animate__animated  animate__fadeIn"> 
+       <h2 class="text-white items-center "> Book a quote with us now to get started</h2>
+        <p class="text-white opacity-70 my-5">Data analytics is important because it can help businesses optimize their performances. It can reduce costs & storing large amounts of data.</p>
+        <button class="h-[58px] w-[169px] border text-white border-white rounded-2xl text-base font-semibold">Book Quote</button>
+    </div>
+    </section>
+    
+<footer class="bg-white">
+    <div class="container-1 bg-white">
+    <div class="grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
+    <div>
+    <h2 class="mb-6 text-sm font-semibold text-fth uppercase">
+        <img src="./assets/img/logo_footer.png" />
+    </h2>
+    <ul class="text-ft">
+    <li class="mb-4">
+    <a href="#" class=" hover:underline">About</a>
+    </li>
+    <li class="mb-4">
+    <a href="#" class="hover:underline">Careers</a>
+    </li>
+    <li class="mb-4">
+    <a href="#" class="hover:underline">Brand Center</a>
+    </li>
+    <li class="mb-4">
+    <a href="#" class="hover:underline">Blog</a>
+    </li>
+    </ul>
+    </div>
+    <div>
+    <h2 class="mb-6 text-sm font-semibold text-fth uppercase">Help center</h2>
+    <ul class="text-ft">
+    <li class="mb-4">
+    <a href="#" class="hover:underline">Discord Server</a>
+    </li>
+    <li class="mb-4">
+    <a href="#" class="hover:underline">Twitter</a>
+    </li>
+    <li class="mb-4">
+    <a href="#" class="hover:underline">Facebook
+    </a></li><a href="#" class="hover:underline">
+    </a><li class="mb-4"><a href="#" class="hover:underline">
+    </a><a href="#" class="hover:underline">Contact Us</a>
+    </li>
+    </ul>
+    </div>
+    <div>
+    <h2 class="mb-6 text-sm font-semibold text-fth uppercase">Legal</h2>
+    <ul class="text-ft">
+    <li class="mb-4">
+    <a href="#" class="hover:underline">Privacy Policy</a>
+    </li>
+    <li class="mb-4">
+    <a href="#" class="hover:underline">Licensing</a>
+    </li>
+    <li class="mb-4">
+    <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+    </li>
+    </ul>
+    </div>
+    <div>
+    <h2 class="mb-6 text-sm font-semibold text-fth uppercase">Download</h2>
+    <ul class="text-ft">
+    <li class="mb-4">
+    <a href="#" class="hover:underline">iOS</a>
+    </li>
+    <li class="mb-4">
+    <a href="#" class="hover:underline">Android</a>
+    </li>
+    <li class="mb-4">
+    <a href="#" class="hover:underline">Windows</a>
+    </li>
+    <li class="mb-4">
+    <a href="#" class="hover:underline">MacOS</a>
+    </li>
+    </ul>
+    </div>
+    </div>
+</div>
+    <div class=" container-1 py-6   md:flex md:items-center md:justify-between border-line border-t-2">
+        <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0">
+            <a href="#" class="text-fth hover:text-white">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg>
+            </a>
+            <a href="#" class="text-fth hover:text-white">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path></svg>
+            </a>
+            <a href="#" class="text-fth hover:text-white">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+            </a>
+            <a href="#" class="text-fth hover:text-white">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
+            </a>
+            <a href="#" class="text-fth hover:text-white">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd"></path></svg>
+            </a>
+            </div>
+        <span class="text-sm text-ft sm:text-center">© Copyright 2022, All Rights Reserved by <a href="https://flowbite.com"> Bitnautic</a>. 
+        </span>
+       
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new WOW().init();
+        </script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->

@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body,
+  html {
+    @apply font-sans;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-mon;
+  }
+  h2 {
+   
+    @apply font-bold;
+    @apply text-secondary;
+    @apply text-[24px];
+    @apply leading-[29px];
+   @apply md:text-[40px];
+    @apply md:leading-[52px];
+
+  }
+}
+
+@layer components {
+  .cta-btn {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.15) 23.96%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      #463ec3;
+    border-radius: 14px;
+    color: #ffffff;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .sh-head {
+    box-shadow: 0px 4px 40px rgba(81, 73, 198, 0.08);
+  }
+
+  .sh-2 {
+    box-shadow: 0px 2.95362px 59.0725px rgba(0, 0, 0, 0.08);
+  }
+  .sh-3 {
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.08);
+  }
+
+  .card {
+    background: #ffffff;
+    border: 1.22051px solid #ebebeb;
+    box-shadow: 0px 24.4103px 48.8205px rgba(57, 57, 57, 0.1);
+    border-radius: 20.3419px;
+  }
+  .container-1 {
+    padding: 1rem;
+  }
+
+  .icon-box {
+    width: 68px;
+    height: 68px;
+    box-shadow: 0px 72.4171px 65.094px rgba(80, 203, 147, 0.16),
+      0px 26.4334px 23.7604px rgba(80, 203, 147, 0.110397),
+      0px 12.8329px 11.5352px rgba(80, 203, 147, 0.0890065),
+      0px 6.29095px 5.65478px rgba(80, 203, 147, 0.0709935),
+      0px 2.48745px 2.23591px rgba(80, 203, 147, 0.0496029);
+    border-radius: 9.7641px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-truck {
+    background: #50cb93;
+  }
+  .icon-pie {
+    background: #ff3d68;
+  }
+  .icon-analytics {
+    background: #7c83fd;
+  }
+
+  @media (min-width: 1170px) {
+    .container-1 {
+      padding: 1rem calc(50% - 585px);
+    }
+  }
+
+  .container-2 {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
