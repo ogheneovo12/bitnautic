@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   content: ["./src/**/*.{html,js}", "./node_modules/flowbite/**/*.js"],
   theme: {
@@ -37,6 +38,12 @@ module.exports = {
         work: ["Work Sans", "sans-serif"],
         pop: ["Poppins", "sans-serif"],
       },
+      screen:{
+        ...defaultTheme.screens,
+        fds:"960px"
+       
+      }
+    
       //COLORS
       //TYPOGRAPHY
       //RESPONSIVENESS

@@ -25,6 +25,9 @@
   }
 }
 
+
+
+
 @layer components {
   .cta-btn {
     background: linear-gradient(
@@ -114,7 +117,7 @@
 
   @media (min-width: 1170px) {
     .container-1 {
-      padding: 1rem calc(50% - 585px);
+      padding: 1rem calc(50% - 650px);
     }
   }
 
