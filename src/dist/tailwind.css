@@ -948,6 +948,10 @@ h2 {
   border-width: 0;
 }
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
 .visible {
   visibility: visible;
 }
@@ -977,6 +981,11 @@ h2 {
   right: 0px;
   bottom: 0px;
   left: 0px;
+}
+
+.inset-y-0 {
+  top: 0px;
+  bottom: 0px;
 }
 
 .bottom-5 {
@@ -1758,6 +1767,10 @@ h2 {
 
 .pt-2 {
   padding-top: 0.5rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
 }
 
 .text-left {
