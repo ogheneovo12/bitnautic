@@ -2102,6 +2102,127 @@ h2 {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+.after\:absolute::after {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.after\:right-0::after {
+  content: var(--tw-content);
+  right: 0px;
+}
+
+.after\:right-1::after {
+  content: var(--tw-content);
+  right: 0.25rem;
+}
+
+.after\:left-0::after {
+  content: var(--tw-content);
+  left: 0px;
+}
+
+.after\:left-3::after {
+  content: var(--tw-content);
+  left: 0.75rem;
+}
+
+.after\:left-4::after {
+  content: var(--tw-content);
+  left: 1rem;
+}
+
+.after\:left-5::after {
+  content: var(--tw-content);
+  left: 1.25rem;
+}
+
+.after\:-top-5::after {
+  content: var(--tw-content);
+  top: -1.25rem;
+}
+
+.after\:-top-3::after {
+  content: var(--tw-content);
+  top: -0.75rem;
+}
+
+.after\:-top-2::after {
+  content: var(--tw-content);
+  top: -0.5rem;
+}
+
+.after\:-top-1::after {
+  content: var(--tw-content);
+  top: -0.25rem;
+}
+
+.after\:-top-4::after {
+  content: var(--tw-content);
+  top: -1rem;
+}
+
+.after\:z-50::after {
+  content: var(--tw-content);
+  z-index: 50;
+}
+
+.after\:contents::after {
+  content: var(--tw-content);
+  display: contents;
+}
+
+.after\:h-\[100px\]::after {
+  content: var(--tw-content);
+  height: 100px;
+}
+
+.after\:h-\[50px\]::after {
+  content: var(--tw-content);
+  height: 50px;
+}
+
+.after\:w-\[30px\]::after {
+  content: var(--tw-content);
+  width: 30px;
+}
+
+.after\:w-\[3px\]::after {
+  content: var(--tw-content);
+  width: 3px;
+}
+
+.after\:w-\[0px\]::after {
+  content: var(--tw-content);
+  width: 0px;
+}
+
+.after\:border-l-2::after {
+  content: var(--tw-content);
+  border-left-width: 2px;
+}
+
+.after\:border-dashed::after {
+  content: var(--tw-content);
+  border-style: dashed;
+}
+
+.after\:bg-neutral-600::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(82 82 82 / var(--tw-bg-opacity));
+}
+
+.after\:bg-transparent::after {
+  content: var(--tw-content);
+  background-color: transparent;
+}
+
+.after\:content-\[\'\'\]::after {
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
