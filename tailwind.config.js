@@ -17,6 +17,7 @@ module.exports = {
         lightblue4: "#5149C6",
         linkblue: "#3E3FD8",
         golden: "#FA4F58",
+        heart:"#FF523D",
         lightgrey: "#7D7D7D",
         bglime: "#F8F9FC",
         carton: "#C4C4C4",

@@ -21,10 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
-    />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap"
       rel="stylesheet"
@@ -178,12 +175,43 @@
             placeholder="name@flowbite.com"
             required
           />
-          <button class="cta-btn w-full max-w-[499px] h-[58px]">
-            Request Pickup <i class="fa-solid fa-circle-chevron-right"></i>
+          <button class="cta-btn items-center flex justify-center w-full max-w-[499px] h-[58px]">
+            Request Pickup <i class='bx bx-chevron-right-circle ml-2 text-[17px]'></i>
           </button>
+          <div class="flex  max-w-[570px] items-center justify-between flex-wrap md:flex-nowrap my-3">
+              <div class="text-left shrink-0 mx-3">
+                  <h3 class="font-bold text-secondary-1 text-[40px] leading-[55px] tracking-[-0.788151px]">10k</h3>
+                  <div class="flex  my-2 text-heart text-xs">
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bxs-heart'></i>
+                    <i class='bx bxs-heart'></i>
+                  </div>
+                  <p class="font-work text-sm text-secondary-1 leading-6">Active Users</p>
+                  <p class="text-xs font-work text-lightblue inline-block">On Our Websites</p>
+              </div>
+              <div class="text-left shrink-0 mx-3">
+                <h3 class="font-bold text-secondary-1 text-[40px] leading-[55px] tracking-[-0.788151px]">4.7</h3>
+                <div class="flex my-2 text-golden text-xs">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                </div>
+                <p class="font-work text-sm text-secondary-1 leading-6">1,938 Rating</p>
+                <p class="text-xs font-work text-lightblue inline-block">Our Users Rating</p>
+            </div>
+              <div>
+                  <h3 class="text-[20px[ leading-[35px] font-bold text-secondary-1 tracking-[-0.462019px]">Trusted by 10,000+ happy Customers and Clients World Wide</h3>
+              </div>
+
+
+          </div>
         </div>
-        <div class="wow animate__animated  animate__slideInRight">
-          <img src="./assets/img/hero_img.png" alt="image of a globe" />
+        <div class="wow animate__animated    animate__slideInRight">
+          <img class="h-auto max-w-[600px] w-full md:w-auto mx-auto"  src="./assets/img/hero_img.png" alt="image of a globe" />
         </div>
       </section>
     </header>
@@ -220,8 +248,8 @@
             Platform comes up with distinctive features like AI based booking
             system, realtime tracking of cargo and ships
           </p>
-          <button class="cta-btn text-xs mx-auto md:mx-0 max-w-[245px] w-full block">
-            Read more <i class="fa-solid fa-circle-chevron-right"></i>
+          <button class="cta-btn flex items-center justify-center text-xs mx-auto md:mx-0 h-[48.7px] max-w-[245px] w-full block">
+            Read more <i class='bx bx-chevron-right-circle ml-2 text-[17px]'></i>
           </button>
         </div>
       </div>
@@ -245,8 +273,8 @@
        Platform comes up with distinctive features like AI based booking
        system, realtime tracking of cargo and ships
      </p>
-     <button class="cta-btn text-xs mx-auto md:mx-0 max-w-[245px] w-full block">
-       Read more
+     <button class="cta-btn flex items-center justify-center text-xs mx-auto md:mx-0 h-[48.7px] max-w-[245px] w-full block">
+       Read more <i class='bx bx-chevron-right-circle ml-2 text-[17px]'></i>
      </button>
    </div>
  </div>
@@ -269,8 +297,8 @@
         Platform comes up with distinctive features like AI based booking
         system, realtime tracking of cargo and ships
       </p>
-      <button class="cta-btn text-xs mx-auto md:mx-0 max-w-[245px] w-full block">
-        Read more
+      <button class="cta-btn flex items-center justify-center text-xs mx-auto md:mx-0 h-[48.7px] max-w-[245px] w-full ">
+        Read more <i class='bx bx-chevron-right-circle ml-2 text-[17px]'></i>
       </button>
     </div>
   </div>
@@ -363,7 +391,7 @@
                 >Blandit ut nunc vel bibendum semper elit</span
               >
             </p>
-            <button class="cta-btn my-4 text-sm w-[169px]">Get Started</button>
+            <button class="cta-btn my-4 h-[48.7px] text-sm w-[169px]">Get Started</button>
           </div>
         </div>
       </div>
@@ -396,7 +424,7 @@
     </section>
     <section class="container-1 min-h-screen py-28">
       <h2 class="text-center">Frequently Asked Questions (FAQ)</h2>
-      <p class="text-grey2 max-w-[488px] text-base text-center mx-auto my-4">
+      <p class="text-grey2 lowercase max-w-[488px] text-base text-center mx-auto my-4 mb-10">
         BROWSE OUR FAQ'S BELOW, IF YOU CAN NOT FIND THE ANSWER TO YOU'RE LOOKING
         FOR PLEASE CONTACT US.
       </p>
