@@ -16,14 +16,12 @@
     @apply font-mon;
   }
   h2 {
-   
     @apply font-bold;
     @apply text-secondary;
     @apply text-[24px];
     @apply leading-[29px];
-   @apply md:text-[40px];
+    @apply md:text-[40px];
     @apply md:leading-[52px];
-
   }
 }
 
@@ -52,13 +50,31 @@
   .sh-3 {
     box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.08);
   }
+  .sh-4 {
+    box-shadow: 10px 10px 40px rgba(81, 73, 199, 0.25);
+  }
 
   .card {
     background: #ffffff;
     border: 1.22051px solid #ebebeb;
     box-shadow: 0px 24.4103px 48.8205px rgba(57, 57, 57, 0.1);
     border-radius: 20.3419px;
+    cursor: pointer;
   }
+  .card:hover {
+    box-shadow: 0px 81.3675px 65.094px rgba(62, 63, 216, 0.07),
+      0px 33.9934px 27.1947px rgba(62, 63, 216, 0.0503198),
+      0px 5.41102px 4.32882px rgba(62, 63, 216, 0.0282725),
+      0px 2.25165px 1.80132px rgba(62, 63, 216, 0.0196802);
+  }
+  .card-1 {
+    background: #ffffff;
+    border: 0.652835px solid rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    box-shadow: 0px 43.8147px 71.1988px rgba(0, 0, 0, 0.05);
+    border-radius: 5.22268px;
+  }
+
   .container-1 {
     padding: 1rem;
   }
@@ -66,11 +82,6 @@
   .icon-box {
     width: 68px;
     height: 68px;
-    box-shadow: 0px 72.4171px 65.094px rgba(80, 203, 147, 0.16),
-      0px 26.4334px 23.7604px rgba(80, 203, 147, 0.110397),
-      0px 12.8329px 11.5352px rgba(80, 203, 147, 0.0890065),
-      0px 6.29095px 5.65478px rgba(80, 203, 147, 0.0709935),
-      0px 2.48745px 2.23591px rgba(80, 203, 147, 0.0496029);
     border-radius: 9.7641px;
     display: flex;
     justify-content: center;
@@ -78,12 +89,27 @@
   }
   .icon-truck {
     background: #50cb93;
+    box-shadow: 0px 72.4171px 65.094px rgba(80, 203, 147, 0.16),
+      0px 26.4334px 23.7604px rgba(80, 203, 147, 0.110397),
+      0px 12.8329px 11.5352px rgba(80, 203, 147, 0.0890065),
+      0px 6.29095px 5.65478px rgba(80, 203, 147, 0.0709935),
+      0px 2.48745px 2.23591px rgba(80, 203, 147, 0.0496029);
   }
   .icon-pie {
     background: #ff3d68;
+    box-shadow: 0px 72.4171px 65.094px rgba(255, 61, 104, 0.16),
+      0px 26.4334px 23.7604px rgba(255, 61, 104, 0.110397),
+      0px 12.8329px 11.5352px rgba(255, 61, 104, 0.0890065),
+      0px 6.29095px 5.65478px rgba(255, 61, 104, 0.0709935),
+      0px 2.48745px 2.23591px rgba(255, 61, 104, 0.0496029);
   }
   .icon-analytics {
     background: #7c83fd;
+    box-shadow: 0px 72.4171px 65.094px rgba(124, 131, 253, 0.16),
+      0px 26.4334px 23.7604px rgba(124, 131, 253, 0.110397),
+      0px 12.8329px 11.5352px rgba(124, 131, 253, 0.0890065),
+      0px 6.29095px 5.65478px rgba(124, 131, 253, 0.0709935),
+      0px 2.48745px 2.23591px rgba(124, 131, 253, 0.0496029);
   }
 
   @media (min-width: 1170px) {

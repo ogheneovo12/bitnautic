@@ -863,11 +863,30 @@ h2 {
   box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.08);
 }
 
+.sh-4 {
+  box-shadow: 10px 10px 40px rgba(81, 73, 199, 0.25);
+}
+
 .card {
   background: #ffffff;
   border: 1.22051px solid #ebebeb;
   box-shadow: 0px 24.4103px 48.8205px rgba(57, 57, 57, 0.1);
   border-radius: 20.3419px;
+}
+
+.card:hover {
+  box-shadow: 0px 81.3675px 65.094px rgba(62, 63, 216, 0.07),
+      0px 33.9934px 27.1947px rgba(62, 63, 216, 0.0503198),
+      0px 5.41102px 4.32882px rgba(62, 63, 216, 0.0282725),
+      0px 2.25165px 1.80132px rgba(62, 63, 216, 0.0196802);
+}
+
+.card-1 {
+  background: #ffffff;
+  border: 0.652835px solid rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  box-shadow: 0px 43.8147px 71.1988px rgba(0, 0, 0, 0.05);
+  border-radius: 5.22268px;
 }
 
 .container-1 {
@@ -877,11 +896,6 @@ h2 {
 .icon-box {
   width: 68px;
   height: 68px;
-  box-shadow: 0px 72.4171px 65.094px rgba(80, 203, 147, 0.16),
-      0px 26.4334px 23.7604px rgba(80, 203, 147, 0.110397),
-      0px 12.8329px 11.5352px rgba(80, 203, 147, 0.0890065),
-      0px 6.29095px 5.65478px rgba(80, 203, 147, 0.0709935),
-      0px 2.48745px 2.23591px rgba(80, 203, 147, 0.0496029);
   border-radius: 9.7641px;
   display: flex;
   justify-content: center;
@@ -890,14 +904,29 @@ h2 {
 
 .icon-truck {
   background: #50cb93;
+  box-shadow: 0px 72.4171px 65.094px rgba(80, 203, 147, 0.16),
+      0px 26.4334px 23.7604px rgba(80, 203, 147, 0.110397),
+      0px 12.8329px 11.5352px rgba(80, 203, 147, 0.0890065),
+      0px 6.29095px 5.65478px rgba(80, 203, 147, 0.0709935),
+      0px 2.48745px 2.23591px rgba(80, 203, 147, 0.0496029);
 }
 
 .icon-pie {
   background: #ff3d68;
+  box-shadow: 0px 72.4171px 65.094px rgba(255, 61, 104, 0.16),
+      0px 26.4334px 23.7604px rgba(255, 61, 104, 0.110397),
+      0px 12.8329px 11.5352px rgba(255, 61, 104, 0.0890065),
+      0px 6.29095px 5.65478px rgba(255, 61, 104, 0.0709935),
+      0px 2.48745px 2.23591px rgba(255, 61, 104, 0.0496029);
 }
 
 .icon-analytics {
   background: #7c83fd;
+  box-shadow: 0px 72.4171px 65.094px rgba(124, 131, 253, 0.16),
+      0px 26.4334px 23.7604px rgba(124, 131, 253, 0.110397),
+      0px 12.8329px 11.5352px rgba(124, 131, 253, 0.0890065),
+      0px 6.29095px 5.65478px rgba(124, 131, 253, 0.0709935),
+      0px 2.48745px 2.23591px rgba(124, 131, 253, 0.0496029);
 }
 
 @media (min-width: 1170px) {
@@ -995,6 +1024,11 @@ h2 {
   margin-bottom: 0.75rem;
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -1020,6 +1054,21 @@ h2 {
   margin-bottom: 1.75rem;
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mx-\[15px\] {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -1028,16 +1077,6 @@ h2 {
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
 }
 
 .mr-3 {
@@ -1058,6 +1097,10 @@ h2 {
 
 .mr-4 {
   margin-right: 1rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mb-10 {
@@ -1144,6 +1187,14 @@ h2 {
   height: 0.75rem;
 }
 
+.h-\[1px\] {
+  height: 1px;
+}
+
+.h-\[48px\] {
+  height: 48px;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -1178,6 +1229,10 @@ h2 {
 
 .min-h-\[180px\] {
   min-height: 180px;
+}
+
+.min-h-\[410px\] {
+  min-height: 410px;
 }
 
 .min-h-\[486px\] {
@@ -1232,6 +1287,10 @@ h2 {
   max-width: 499px;
 }
 
+.max-w-\[570px\] {
+  max-width: 570px;
+}
+
 .max-w-\[600px\] {
   max-width: 600px;
 }
@@ -1252,6 +1311,10 @@ h2 {
   max-width: 768px;
 }
 
+.max-w-\[410px\] {
+  max-width: 410px;
+}
+
 .max-w-\[488px\] {
   max-width: 488px;
 }
@@ -1262,10 +1325,6 @@ h2 {
 
 .max-w-\[500px\] {
   max-width: 500px;
-}
-
-.max-w-\[570px\] {
-  max-width: 570px;
 }
 
 .flex-1 {
@@ -1375,6 +1434,10 @@ h2 {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .gap-8 {
@@ -1498,6 +1561,11 @@ h2 {
   border-color: rgb(111 85 255 / var(--tw-border-opacity));
 }
 
+.border-line2 {
+  --tw-border-opacity: 1;
+  border-color: rgb(216 216 216 / var(--tw-border-opacity));
+}
+
 .border-line {
   --tw-border-opacity: 1;
   border-color: rgb(218 218 218 / var(--tw-border-opacity));
@@ -1532,19 +1600,29 @@ h2 {
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
-.bg-primary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(84 76 199 / var(--tw-bg-opacity));
-}
-
 .bg-lightblue4 {
   --tw-bg-opacity: 1;
   background-color: rgb(81 73 198 / var(--tw-bg-opacity));
 }
 
+.bg-line {
+  --tw-bg-opacity: 1;
+  background-color: rgb(218 218 218 / var(--tw-bg-opacity));
+}
+
 .bg-bglime {
   --tw-bg-opacity: 1;
   background-color: rgb(248 249 252 / var(--tw-bg-opacity));
+}
+
+.bg-indi-act {
+  --tw-bg-opacity: 1;
+  background-color: rgb(92 85 202 / var(--tw-bg-opacity));
+}
+
+.bg-indi-def {
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 231 231 / var(--tw-bg-opacity));
 }
 
 .bg-gray-200 {
@@ -1794,6 +1872,10 @@ h2 {
   line-height: 19px;
 }
 
+.leading-5 {
+  line-height: 1.25rem;
+}
+
 .leading-4 {
   line-height: 1rem;
 }
@@ -1886,6 +1968,21 @@ h2 {
 .text-grey4 {
   --tw-text-opacity: 1;
   color: rgb(89 86 107 / var(--tw-text-opacity));
+}
+
+.text-rod {
+  --tw-text-opacity: 1;
+  color: rgb(196 14 14 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-grey6 {
+  --tw-text-opacity: 1;
+  color: rgb(41 187 137 / var(--tw-text-opacity));
 }
 
 .text-gray-500 {
@@ -2004,6 +2101,11 @@ h2 {
 .hover\:bg-gray-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-800:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-blue-800:hover {
@@ -2408,6 +2510,10 @@ h2 {
 
   .lg\:max-w-\[503px\] {
     max-width: 503px;
+  }
+
+  .lg\:flex-nowrap {
+    flex-wrap: nowrap;
   }
 
   .lg\:rounded-\[14px\] {
