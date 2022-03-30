@@ -872,6 +872,7 @@ h2 {
   border: 1.22051px solid #ebebeb;
   box-shadow: 0px 24.4103px 48.8205px rgba(57, 57, 57, 0.1);
   border-radius: 20.3419px;
+  cursor: pointer;
 }
 
 .card:hover {
