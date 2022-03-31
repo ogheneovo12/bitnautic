@@ -1106,6 +1106,16 @@ h2 {
   margin-right: 2.5rem;
 }
 
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -1388,6 +1398,10 @@ h2 {
 
 .max-w-\[1170px\] {
   max-width: 1170px;
+}
+
+.max-w-\[800px\] {
+  max-width: 800px;
 }
 
 .flex-1 {
@@ -2662,8 +2676,16 @@ h2 {
     font-size: 50px;
   }
 
+  .lg\:text-\[45px\] {
+    font-size: 45px;
+  }
+
   .lg\:leading-\[70px\] {
     line-height: 70px;
+  }
+
+  .lg\:leading-\[65px\] {
+    line-height: 65px;
   }
 
   .lg\:shadow-none {
