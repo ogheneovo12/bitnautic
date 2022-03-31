@@ -1292,6 +1292,10 @@ h2 {
   min-height: 600px;
 }
 
+.min-h-\[763px\] {
+  min-height: 763px;
+}
+
 .w-6 {
   width: 1.5rem;
 }
