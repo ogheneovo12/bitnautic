@@ -932,8 +932,16 @@ h2 {
 
 @media (min-width: 1170px) {
   .container-1 {
-    padding: 1rem calc(50% - 650px);
+    padding: 1rem calc(50% - 585px);
   }
+}
+
+.container-2 {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .sr-only {
@@ -1024,6 +1032,10 @@ h2 {
   margin: 0.75rem;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1089,6 +1101,11 @@ h2 {
   margin-bottom: 2rem;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -1135,6 +1152,10 @@ h2 {
 
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+
+.mb-\[91px\] {
+  margin-bottom: 91px;
 }
 
 .block {
@@ -1249,6 +1270,18 @@ h2 {
   min-height: 486px;
 }
 
+.min-h-\[500px\] {
+  min-height: 500px;
+}
+
+.min-h-\[643px\] {
+  min-height: 643px;
+}
+
+.min-h-\[600px\] {
+  min-height: 600px;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -1341,6 +1374,22 @@ h2 {
   max-width: 500px;
 }
 
+.max-w-\[1200px\] {
+  max-width: 1200px;
+}
+
+.max-w-\[1000px\] {
+  max-width: 1000px;
+}
+
+.max-w-\[900px\] {
+  max-width: 900px;
+}
+
+.max-w-\[1170px\] {
+  max-width: 1170px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1396,6 +1445,11 @@ h2 {
 
 .resize {
   resize: both;
+}
+
+.scroll-py-10 {
+  scroll-padding-top: 2.5rem;
+  scroll-padding-bottom: 2.5rem;
 }
 
 .grid-cols-2 {
@@ -1514,6 +1568,10 @@ h2 {
 
 .rounded-2xl {
   border-radius: 1rem;
+}
+
+.rounded-\[20px\] {
+  border-radius: 20px;
 }
 
 .rounded-l-lg {
@@ -1662,12 +1720,32 @@ h2 {
   --tw-bg-opacity: 0.5;
 }
 
+.bg-\[url\(\'\.\/assets\/img\/hero_img\.png\'\)\] {
+  background-image: url('./assets/img/hero_img.png');
+}
+
+.bg-\[url\(\'\/assets\/img\/hero_img\.png\'\)\] {
+  background-image: url('/assets/img/hero_img.png');
+}
+
+.bg-\[url\(\'\.\.\/assets\/img\/hero_img\.png\'\)\] {
+  background-image: url('../assets/img/hero_img.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
 
+.bg-contain {
+  background-size: contain;
+}
+
 .bg-center {
   background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-2 {
@@ -1753,6 +1831,11 @@ h2 {
   padding-bottom: 0.75rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pr-4 {
   padding-right: 1rem;
 }
@@ -1775,6 +1858,10 @@ h2 {
 
 .pt-2 {
   padding-top: 0.5rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 
 .text-left {
@@ -2368,6 +2455,11 @@ h2 {
     margin-right: 0px;
   }
 
+  .md\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
   .md\:mr-3 {
     margin-right: 0.75rem;
   }
@@ -2396,12 +2488,24 @@ h2 {
     min-height: 400px;
   }
 
+  .md\:min-h-full {
+    min-height: 100%;
+  }
+
   .md\:w-auto {
     width: auto;
   }
 
   .md\:w-2\/4 {
     width: 50%;
+  }
+
+  .md\:max-w-\[499px\] {
+    max-width: 499px;
+  }
+
+  .md\:max-w-\[570px\] {
+    max-width: 570px;
   }
 
   .md\:grid-cols-4 {
@@ -2424,6 +2528,10 @@ h2 {
     justify-content: space-between;
   }
 
+  .md\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -2438,8 +2546,16 @@ h2 {
     background-color: transparent;
   }
 
+  .md\:bg-cover {
+    background-size: cover;
+  }
+
   .md\:p-0 {
     padding: 0px;
+  }
+
+  .md\:pr-0 {
+    padding-right: 0px;
   }
 
   .md\:text-left {

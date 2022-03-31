@@ -1,7 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url("../assets/img/bd_ill.svg");
   background-position: top right;
   background-repeat: no-repeat;
+  scroll-behavior: smooth;
 }
 
 .cta_bg {

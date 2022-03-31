@@ -117,7 +117,7 @@
 
   @media (min-width: 1170px) {
     .container-1 {
-      padding: 1rem calc(50% - 650px);
+      padding: 1rem calc(50% - 585px);
     }
   }
 
