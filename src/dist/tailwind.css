@@ -1404,6 +1404,10 @@ h2 {
   max-width: 800px;
 }
 
+.max-w-\[611px\] {
+  max-width: 611px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -2562,6 +2566,10 @@ h2 {
 
   .md\:bg-cover {
     background-size: cover;
+  }
+
+  .md\:bg-contain {
+    background-size: contain;
   }
 
   .md\:p-0 {
